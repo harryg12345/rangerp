@@ -1,6 +1,6 @@
 
 
-var canvas = new fabric.canvas("myCanvas");
+var canvas = new fabric.Canvas("myCanvas");
  block_y=1;
  block_x=1;
 
@@ -14,8 +14,8 @@ function new_image(get_image)
 	fabric.Image.fromURL(get_image, function(Img){
 		block_image_object = Img;
 
-		block_image_object.scaleTowidth(block_image_width)
-		block_image_object.scaleToheight(block_image_height)
+		block_image_object.scaleToWidth(block_image_width)
+		block_image_object.scaleToHeight(block_image_height)
 		block_image_object.set({
 
 		
@@ -36,32 +36,32 @@ console.log(keyPressed);
 	if(keyPressed == '82') // add appropriate keycode
 	{
 		new_image("rr1.png");
-		console.log(r)
+		console.log("r")
 	}
 	if(keyPressed == '71')
 	{
 		block_x = 200;
 		new_image("gr.png");
-		console.log(g)
+		console.log("g")
 	}
 	
 	if(keyPressed == '89')
 	{
 		block_x =350;
 		new_image("yr.png");
-		console.log(y)
+		console.log("y")
 	}
 	if(keyPressed == '80')
 	{
 		block_x = 600;
 		new_image("pr.png");
-		console.log(p)
+		console.log("p")
 	}
 	if(keyPressed == '66')
 	{
 		block_x = 700;
 		new_image("br.png");
-		console.log(b)
+		console.log("b")
 	}
 	
 }
